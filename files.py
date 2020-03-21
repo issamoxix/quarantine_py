@@ -1,4 +1,3 @@
-
 import os
 x = os.listdir()
 y = len(x)+1
@@ -20,6 +19,6 @@ for arrays in ext:
 					#print('We have one here is ', arrays_ext, fi)
 					files[arrays_ext].append(fi)
 					#print(fi)
-		
-		print(arrays_ext,' :',len(files[arrays_ext]))
+		if len(files[arrays_ext]) > 0:
+			print(arrays_ext,' :',len(files[arrays_ext]))
 #print(files)
